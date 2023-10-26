@@ -101,7 +101,7 @@ repositories {
 }
 
 dependencies {
-    implementation(name: 'gigya-android-sdk-core-v7.0.5', ext: 'aar', dir: 'libs')
+    implementation project(":gigya", configuration = "default")
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.facebook.react:react-native:+'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${safeExtGet('kotlinVersion')}"
