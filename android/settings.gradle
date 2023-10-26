@@ -1,1 +1,1 @@
-include(":gigya")
+include(":gigya-sdk")
