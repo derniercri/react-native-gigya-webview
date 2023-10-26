@@ -1,1 +1,2 @@
-include(":gigya-sdk")
+include ':gigya-sdk'
+project(':gigya-sdk').projectDir = new File(rootProject.projectDir, '.')
