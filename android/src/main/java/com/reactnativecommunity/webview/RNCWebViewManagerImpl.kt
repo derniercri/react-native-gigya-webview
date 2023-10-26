@@ -281,11 +281,8 @@ class RNCWebViewManagerImpl {
 
                 gigyaCredentials = RNCGigyaCredentials(sessionToken, sessionSecret, apiKey, apiDomain)
 
-                if (sessionToken != null && sessionSecret != null && apiKey != null && apiDomain != null) {
-                    val application = viewWrapper.webView.themedReactContext.currentActivity?.application as Application
-                    val gigya = RNCGigya(application, apiKey, apiDomain)
-
-                    gigya.initialize(sessionToken, sessionSecret, viewWrapper.webView)
+                if (apiKey != null && apiDomain != null) {
+                  viewWrapper.webView.gigya.prepare(apiKey, apiDomain)
                 }
             }
         }

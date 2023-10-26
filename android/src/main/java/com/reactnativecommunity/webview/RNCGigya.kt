@@ -10,11 +10,14 @@ import com.gigya.android.sdk.account.models.GigyaAccount
 import com.gigya.android.sdk.session.SessionInfo
 import com.gigya.android.sdk.ui.plugin.IGigyaWebBridge
 
-class RNCGigya(context: Application, apiKey: String, apiDomain: String) {
-  private var gigya: Gigya<GigyaAccount>
+class RNCGigya(context: Application) {
+  private lateinit var gigya: Gigya<GigyaAccount>
 
   init {
     Gigya.setApplication(context)
+  }
+
+  fun prepare(apiKey: String, apiDomain: String) {
     gigya = Gigya.getInstance(GigyaAccount::class.java)
     gigya.init(apiKey, apiDomain)
   }
