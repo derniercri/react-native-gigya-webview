@@ -87,6 +87,9 @@ public class RNCWebViewClient extends WebViewClient {
 
       RNCWebView reactWebView = (RNCWebView) webView;
       reactWebView.callInjectedJavaScriptBeforeContentLoaded();
+      if (gigyaCredentials.apiKey != null && gigyaCredentials.apiDomain != null) {
+        reactWebView.gigya.initialize(gigyaCredentials.sessionToken, gigyaCredentials.sessionSecret, reactWebView);
+      }
     }
 
     @Override
