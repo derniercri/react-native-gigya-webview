@@ -50,7 +50,7 @@ Importez le composant `WebView` de `react-native-webview` et utilisez le de la m
 ```tsx
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 // ...
 const MyWebComponent = () => {

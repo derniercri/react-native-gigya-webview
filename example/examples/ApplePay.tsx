@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View} from 'react-native';
 
-import WebView from 'react-native-webview';
+import WebView from 'react-native-gigya-webview';
 
 type Props = {};
 type State = {};

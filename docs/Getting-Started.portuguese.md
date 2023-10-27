@@ -89,7 +89,7 @@ Observe que se você deseja habilitar a rolagem com o Touch para o componente We
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -107,7 +107,7 @@ Exemplo mínimo com HTML:
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyInlineWeb extends Component {
   render() {

@@ -23,7 +23,7 @@ The simplest way to use the WebView is to simply pipe in the HTML you want to di
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyInlineWeb extends Component {
   render() {
@@ -45,7 +45,7 @@ This is the most common use-case for WebView.
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -64,7 +64,7 @@ Sometimes you would have bundled an HTML file along with the app and would like 
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 const myHtmlFile = require('./my-asset-folder/local-site.html');
 
@@ -79,7 +79,7 @@ However on Android, you need to place the HTML file inside your android project'
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -98,7 +98,7 @@ Sometimes you want to intercept a user tapping on a link in your webview and do 
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   webview = null;
@@ -298,7 +298,7 @@ This is a script that runs immediately after the web page loads for the first ti
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -341,7 +341,7 @@ This is a script that runs **before** the web page loads for the first time. It 
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -401,7 +401,7 @@ Note: `ReactNativeWebView.injectedObjectJson()` returns the JSON encoded object 
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -426,7 +426,7 @@ While convenient, the downside to the previously mentioned `injectedJavaScript` 
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -473,7 +473,7 @@ You _must_ set `onMessage` or the `window.ReactNativeWebView.postMessage` method
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {

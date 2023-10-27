@@ -173,7 +173,7 @@ To get your native component, you must use `requireNativeComponent`: the same as
 ```javascript
 import React, { Component } from 'react';
 import { requireNativeComponent } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class CustomWebView extends Component {
   render() {
