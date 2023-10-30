@@ -17,43 +17,21 @@ class RNCGigya(context: Application) {
     Gigya.setApplication(context)
   }
 
-  fun prepare(apiKey: String, apiDomain: String) {
+  fun initialize(apiKey: String, apiDomain: String, webview: WebView) {
     gigya = Gigya.getInstance(GigyaAccount::class.java)
     gigya.init(apiKey, apiDomain)
-  }
-
-  fun initialize(sessionToken: String, sessionSecret: String, webview: WebView) {
     attachBridge(webview)
-    logUser(sessionToken = sessionToken, sessionSecret = sessionSecret)
   }
 
-  private fun logUser(sessionToken: String, sessionSecret: String) {
+  fun login(sessionToken: String, sessionSecret: String) {
     val session = SessionInfo(sessionSecret, sessionToken)
     gigya.setSession(session)
   }
 
-
   private fun attachBridge(webview: WebView) {
     var webBridge: IGigyaWebBridge<GigyaAccount>? = null
 
-    /*
-    Make sure you enable javascript for your WebView instance.
-    */
-    val webSettings = webview.settings
-    webSettings.javaScriptEnabled = true
-
     webBridge = gigya.createWebBridge()
     webBridge?.attachTo(webview, object: GigyaPluginCallback<GigyaAccount>() {}, null)
-
-    /*
-    Make sure to attach the GigyaWebBridge to your WebViewClient instance.
-    */
-    webview.webViewClient = (object: WebViewClient() {
-      override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
-        val uri = request?.url
-        val uriString = uri.toString()
-        return webBridge?.invoke(uriString) ?: false
-      }
-    })
   }
 }
