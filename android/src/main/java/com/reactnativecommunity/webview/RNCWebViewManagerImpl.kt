@@ -281,8 +281,16 @@ class RNCWebViewManagerImpl {
 
                 gigyaCredentials = RNCGigyaCredentials(sessionToken, sessionSecret, apiKey, apiDomain)
 
-                if (apiKey != null && apiDomain != null) {
-                  viewWrapper.webView.gigya.prepare(apiKey, apiDomain)
+                if (gigyaCredentials.sessionToken != null && gigyaCredentials.sessionSecret != null && gigyaCredentials.apiKey != null && gigyaCredentials.apiDomain != null) {
+                    viewWrapper.webView.gigya.prepare(
+                      gigyaCredentials.apiKey,
+                      gigyaCredentials.apiDomain
+                    )
+                    viewWrapper.webView.gigya.initialize(
+                      gigyaCredentials.sessionToken,
+                      gigyaCredentials.sessionSecret,
+                      viewWrapper.webView
+                    )
                 }
             }
         }
