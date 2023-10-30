@@ -10,7 +10,7 @@
     "Martin Frouin <martin.frouin@derniercri.io>"
   ],
   "license": "MIT",
-  "version": "13.6.5",
+  "version": "13.6.6",
   "homepage": "https://github.com/derniercri/react-native-gigya-webview#readme",
   "scripts": {
     "android": "react-native run-android",
