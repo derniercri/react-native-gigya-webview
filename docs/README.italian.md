@@ -36,7 +36,7 @@ Importa il componente `WebView` da `react-native-webview` per poi usarlo nel seg
 ```tsx
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 // ...
 const MyWebComponent = () => {

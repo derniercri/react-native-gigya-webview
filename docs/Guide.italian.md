@@ -21,7 +21,7 @@ Il modo più semplice per usare la WebView è passare l'HTML che si desidera ren
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyInlineWeb extends Component {
   render() {
@@ -43,7 +43,7 @@ Questo è l'uso più comune per una WebView.
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -61,7 +61,7 @@ A volte potresti avere incluso un file HTML insieme all'app e desideri caricare 
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 const myHtmlFile = require('./my-asset-folder/local-site.html');
 
@@ -76,7 +76,7 @@ Tuttavia, su Android, è necessario mettere il file HTML all'interno della carte
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -93,7 +93,7 @@ A volte si desidera intercettare quando l'utente preme un link nella WebView e f
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   webview = null;
@@ -271,7 +271,7 @@ Questo è uno script che viene eseguito immediatamente dopo il caricamento inizi
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -315,7 +315,7 @@ Questo è uno script che viene eseguito **prima** del caricamento della pagina w
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -354,7 +354,7 @@ Sebbene comodo, il lato negativo della prop `injectedJavaScript` precedentemente
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {
@@ -399,7 +399,7 @@ Poter inviare JavaScript alla pagina web è fantastico, ma cosa succede quando l
 ```jsx
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class App extends Component {
   render() {

@@ -170,7 +170,7 @@ Per richiamare il tuo componente nativo, puoi usare il metodo `requireNativeComp
 ```javascript
 import React, { Component } from 'react';
 import { requireNativeComponent } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 export default class CustomWebView extends Component {
   render() {

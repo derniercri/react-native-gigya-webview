@@ -10,6 +10,7 @@ PODS:
     - React-jsi (= 0.71.12)
     - ReactCommon/turbomodule/core (= 0.71.12)
   - fmt (6.2.1)
+  - Gigya (1.5.7)
   - glog (0.3.5)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -233,7 +234,8 @@ PODS:
   - React-jsinspector (0.71.12)
   - React-logger (0.71.12):
     - glog
-  - react-native-webview (13.4.0):
+  - react-native-gigya-webview (13.6.4):
+    - Gigya
     - React-Core
   - React-perflogger (0.71.12)
   - React-RCTActionSheet (0.71.12):
@@ -347,7 +349,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../../node_modules/react-native/ReactCommon/logger`)
-  - react-native-webview (from `../..`)
+  - react-native-gigya-webview (from `../..`)
   - React-perflogger (from `../../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../../node_modules/react-native/Libraries/NativeAnimation`)
@@ -369,6 +371,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - fmt
+    - Gigya
 
 EXTERNAL SOURCES:
   boost:
@@ -409,7 +412,7 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../../node_modules/react-native/ReactCommon/logger"
-  react-native-webview:
+  react-native-gigya-webview:
     :path: "../.."
   React-perflogger:
     :path: "../../node_modules/react-native/ReactCommon/reactperflogger"
@@ -452,6 +455,7 @@ SPEC CHECKSUMS:
   FBLazyVector: 4eb7ee83e8d0ad7e20a829485295ff48823c4e4c
   FBReactNativeSpec: d15a928cf21094fa2fc39c7cfadad3f28f920166
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
+  Gigya: 5fa84868ca1ffd6fe973b747a1f022b3ebdcf471
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 4db5e3e18b906377a502da5b358ff159ba4783ed
@@ -467,7 +471,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: a78a0e415dc4b786a4308becf3e3bc6dbbc7b92e
   React-jsinspector: ec4dcbfb1f4e72f04f826a0301eceee5fa7ca540
   React-logger: 35538accacf2583693fbc3ee8b53e69a1776fcee
-  react-native-webview: 64c9bf9646e7377240fb87d70f74556af6433143
+  react-native-gigya-webview: d954f5a14da98320a23b5ffb739d1467d5069fa2
   React-perflogger: 75b0e25075c67565a830985f3c373e2eae5389e0
   React-RCTActionSheet: a0c3e916b327e297d124d9ebe8b0c721840ee04d
   React-RCTAnimation: 3da7025801d7bf0f8cfd94574d6278d5b82a8b88

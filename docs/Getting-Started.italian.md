@@ -92,7 +92,7 @@ Ora puoi accedere al controllo WebView2 di WinUI da JavaScript della tua app tra
 ## 4. Importa la webview nel tuo componente
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyWeb extends Component {
   render() {
@@ -110,7 +110,7 @@ Esempio minimo usando HTML inline:
 
 ```js
 import React, { Component } from 'react';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 class MyInlineWeb extends Component {
   render() {

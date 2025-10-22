@@ -67,8 +67,9 @@ public class RNCWebView extends WebView implements LifecycleEventListener {
     protected boolean hasScrollEvent = false;
     protected boolean nestedScrollEnabled = false;
     protected ProgressChangedFilter progressChangedFilter;
+    protected RNCGigya gigya = new RNCGigya(this.getThemedReactContext().getCurrentActivity().getApplication());
 
-    /**
+  /**
      * WebView must be created with an context of the current activity
      * <p>
      * Activity Context is required for creation of dialogs internally by WebView
@@ -86,6 +87,10 @@ public class RNCWebView extends WebView implements LifecycleEventListener {
 
     public void setBasicAuthCredential(RNCBasicAuthCredential credential) {
         mRNCWebViewClient.setBasicAuthCredential(credential);
+    }
+
+    public void setGigyaCredentials(RNCGigyaCredentials credential) {
+        mRNCWebViewClient.setGigyaCredentials(credential);
     }
 
     public void setSendContentSizeChangeEvents(boolean sendContentSizeChangeEvents) {

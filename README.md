@@ -1,4 +1,8 @@
-# React Native WebView
+# React Native Gigya WebView
+
+Forked from [react-native-webview/react-native-webview](https://github.com/react-native-webview/react-native-webview)
+
+Add Gigya implementation with the prop `gigyaCredentials` to attach gigya login inside the webview
 
 ![star this repo](https://img.shields.io/github/stars/react-native-webview/react-native-webview?style=flat-square)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -50,7 +54,7 @@ Import the `WebView` component from `react-native-webview` and use it like so:
 ```tsx
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native-gigya-webview';
 
 // ...
 const MyWebComponent = () => {
